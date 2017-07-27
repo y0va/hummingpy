@@ -12,9 +12,13 @@ All configuration is done via ssh. Raspian standard UN/PW: pi/raspberry
 ### Sound Drivers
 #### Wolfson Audio Card
 I did some kernel patching to get the Wolfson Card running on a raspbian, but today the drivers seem to be included within the Kernel: http://www.horus.com/~hias/cirrus-driver.html
+
 Run the right usecase script, to activate the hardware suitable for your case. Normally `./Record_from_Linein.sh` .
+
 Disable the built-in sound card: http://www.instructables.com/id/Disable-the-Built-in-Sound-Card-of-Raspberry-Pi/ .
+
 Now we can talk to the Wolfson Card as 'default'.
+
 #### Normal USB Chips
 Normal USB Sound Cards also work aout of the box, but have less quality.
 
