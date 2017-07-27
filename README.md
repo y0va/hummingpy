@@ -1,5 +1,5 @@
 # hummingpy
-Python sound spy on RPI3 for bee hives 
+Python sound fft 2 txt transformer on RPI3 for bee hives 
 
 ## Setup a hummingpy image
 
