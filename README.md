@@ -34,7 +34,7 @@ git clone https://github.com/y0va/hummingpy.git
 #### Hive Name
 Hive name equals to hostname, which is set in `/etc/hostname`.
 #### Network
-If you want to use wlan edit install/interfaces accordingly to your local settings. [TODO](stabelize WLAN especially over GSM)
+If you want to use wlan edit install/interfaces accordingly to your local settings. *TODO: Stabelize WLAN especially over GSM*
 #### Config File
 Main config file is `install/config.py`
 It will be reloaded from the WEBDAV structure defined in it during every start.
@@ -42,7 +42,7 @@ Define WEBDAV-URL in config.py. See there for details.
 ##### WEBDAV Structure
 In the root of the WEBDAV Structure there has to be config.py and humming.py out of the install directory.
 In this directory each Hive has to have it's own directory named 'Hive Name'. See above. Each hive directory has to have directories called `logs` and `recordings`
-[TODO](create directory structure automagically on new system)
+*TODO: Create directory structure automagically on new system*
 ##### Other settings
 Recorded data is temporarily stored in /var/recordings
 Log file is in /var/log/hummingpy.log
