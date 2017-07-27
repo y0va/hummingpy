@@ -1,4 +1,4 @@
-pip install -r requirements.lst
+apt-get install python-alsaaudio python-numpy python-requests python-scipy python-matplotlib
 
 #we need a dir called /var/recordings:
 #home will be /root/hummingpy:
