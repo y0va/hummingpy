@@ -1,0 +1,18 @@
+[Unit]
+Description=Hummingpy
+Wants=network-online.target
+After=network.target network-online.target
+
+#After=dhcpcd5
+
+[Service]
+Type=forking
+PIDFile=/root/hummingpy/humming.pid
+ExecStart=/usr/sbin/hummon.py
+ExecStop=/usr/sbin/hummkill.sh
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target
+#After=network-online.target
+
