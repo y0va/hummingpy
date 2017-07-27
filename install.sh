@@ -1,5 +1,5 @@
 apt update
-apt install python-alsaaudio python-numpy python-requests python-scipy python-matplotlib
+apt install python-alsaaudio python-numpy python-requests python-scipy python-matplotlib rfkill
 
 #we need a dir called /var/recordings:
 #home will be /root/hummingpy:
@@ -24,5 +24,6 @@ chmod u+x /root/hummingpy/humming.py
 chmod u+x /usr/sbin/hummkill.sh
 chmod u+x /usr/sbin/hummon.py
 
-# reload systemd init system
+# enable hummingpy and reload systemd init system
+systemctl enable humming.service
 systemctl daemon-reload
