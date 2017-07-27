@@ -99,6 +99,8 @@ def start_network() :
     if c.KILL_WIFI : 
         os.system('rfkill unblock wifi')
         os.system('ifdown ' + c.IFACE +' && ifup ' + c.IFACE)
+        os.system('ping -c 1 google.de')
+
     
     
 
@@ -119,18 +121,18 @@ def upload(filename="", files="") :
     try:
         r=requests.head(furl,auth=c.AUTH, verify=False, timeout=c.REQUESTSTIMEOUT)
     except requests.exceptions.RequestException as e:
-        logger.debug("while trying to get head of " + furl + " : " + str(r.status_code))
+        logger.debug("while trying to get head of " + furl + " : " + str(e))
         stop_network()
         os.remove(filename)
         return False 
     
     
-    if not r.status_code == requests.codes.ok :
+    if not r.status_code == requests.codes.ok :   ## FILE DOES NOT EXIST
         map (os.remove,files)
         try: 
             r = requests.put(furl, data= open (filename), auth=c.AUTH, verify=False, timeout=c.REQUESTSTIMEOUT)
         except requests.exceptions.RequestException as e:
-            logger.debug("while trying to upload file: " + furl + " : " + str(r.status_code))
+            logger.debug("while trying to upload file: " + furl + " : " + str(e))
             stop_network()
             os.remove(filename)
             return False 
