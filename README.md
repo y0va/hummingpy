@@ -4,7 +4,7 @@ Python sound spy on RPI3 for bee hives
 ## Setup a hummingpy image
 
 ### Platform
-We decided to use (Raspberry 3 SBC)[https://www.raspberrypi.org/products/raspberry-pi-3-model-b/] with (Wolfson Audio Card)[https://www.element14.com/community/community/raspberry-pi/raspberry-pi-accessories/wolfson_pi].
+We decided to use [Raspberry 3 SBC](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) with (Wolfson Audio Card)[https://www.element14.com/community/community/raspberry-pi/raspberry-pi-accessories/wolfson_pi].
 Use the Raspian Jessie Lite image from: https://www.raspberrypi.org/downloads/raspbian/
 
 ### Sound Drivers
