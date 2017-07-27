@@ -23,7 +23,7 @@ Normal USB Sound Cards also work aout of the box, but have less quality.
 ### Clone project to RPI
 Install git and pip and then clone repo to home dir.
 As user pi in $HOME:
-```
+```bash
 sudo apt install git
 git clone https://github.com/y0va/hummingpy.git
 ```
@@ -48,7 +48,7 @@ See config.py
 
 #### Installation
 run install script: 
-```
+```bash
 cd hummingpy
 sudo bash install.sh
 ```
