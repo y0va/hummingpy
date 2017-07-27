@@ -54,3 +54,11 @@ cd hummingpy
 sudo bash install.sh
 ```
 see install.sh for details.
+
+#### Run
+Type:
+`sudo service humming restart`
+
+or similar to control service ' humming'.
+
+
